@@ -1,8 +1,11 @@
 package com.epam.brest.model;
 
+import javax.persistence.Entity;
+
 /**
  * POJO Client for model.
  */
+@Entity
 public class Client {
 
     private Integer clientId;

@@ -2,8 +2,10 @@ package com.epam.brest.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class Device {
 
     private Integer deviceId;

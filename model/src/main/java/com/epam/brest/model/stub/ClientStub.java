@@ -1,5 +1,8 @@
 package com.epam.brest.model.stub;
 
+import javax.persistence.Entity;
+
+@Entity
 public class ClientStub {
 
     private Integer clientId;

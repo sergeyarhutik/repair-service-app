@@ -1,6 +1,7 @@
 package com.epam.brest.service;
 
 import com.epam.brest.model.Device;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 /**
  * Device Service Interface.
  */
+@Component
 public interface DeviceService {
 
     /**

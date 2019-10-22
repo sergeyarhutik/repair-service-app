@@ -2,12 +2,14 @@ package com.epam.brest.service;
 
 import com.epam.brest.model.Client;
 import com.epam.brest.model.stub.ClientStub;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * Client Service Interface.
  */
+@Component
 public interface ClientService {
 
     /**

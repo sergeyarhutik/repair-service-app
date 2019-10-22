@@ -2,31 +2,27 @@ package com.epam.brest.rest_app;
 
 
 import com.epam.brest.model.Client;
-import com.epam.brest.model.stub.ClientStub;
 import com.epam.brest.service.ClientService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
 public class ClientRestController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ClientRestController.class);
 
+    @Autowired
     private ClientService clientService;
 
     @GetMapping(value = "/clients")
     public List<Client> findAll() {
         LOGGER.debug("get all clients");
         return clientService.findAll();
-    }
-
-    @GetMapping(value = "/clients/with_devices")
-    public List<ClientStub> findAllStubs() {
-        LOGGER.debug("get all clients stubs");
-        return clientService.findAllWithDevices();
     }
 
     @GetMapping(value = "/clients/{id}")

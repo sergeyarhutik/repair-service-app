@@ -4,6 +4,7 @@ import com.epam.brest.model.Device;
 import com.epam.brest.service.DeviceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,10 +14,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+@RestController
 public class DeviceRestController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DeviceRestController.class);
 
+    @Autowired
     private DeviceService deviceService;
 
     @GetMapping(value = "/devices")

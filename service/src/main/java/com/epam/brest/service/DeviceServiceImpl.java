@@ -6,13 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 
+@Service
 @Component
-@Transactional
 public class DeviceServiceImpl implements DeviceService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DeviceServiceImpl.class);
