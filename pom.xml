@@ -9,7 +9,8 @@
 		<module>service</module>
 		<module>dao-api</module>
         <module>rest-app</module>
-	</modules>
+        <module>dao</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

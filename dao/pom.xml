@@ -9,17 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service</artifactId>
+    <artifactId>dao</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.epam.brest</groupId>
-            <artifactId>dao-api</artifactId>
+            <artifactId>model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.epam.brest</groupId>
-            <artifactId>service-api</artifactId>
+            <artifactId>dao-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
