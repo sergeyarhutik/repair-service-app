@@ -1,9 +1,9 @@
 package com.epam.brest.model;
 
 import org.junit.jupiter.api.Assertions;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
-public class ClientTest {
+class ClientTest {
 
     private static final Integer CLIENT_ID = 1;
     private static final String CLIENT_NAME = "clientName";
@@ -11,13 +11,13 @@ public class ClientTest {
     private Client client = new Client();
 
     @Test
-    public void getClientId() {
+    void getClientId() {
         client.setClientId(CLIENT_ID);
         Assertions.assertEquals(client.getClientId(), CLIENT_ID);
     }
 
     @Test
-    public void getClientName() {
+    void getClientName() {
         client.setClientName(CLIENT_NAME);
         Assertions.assertEquals(client.getClientName(), CLIENT_NAME);
     }
@@ -25,13 +25,13 @@ public class ClientTest {
     /**
      * Constructor Client Test
      */
-    public ClientTest() {
+    ClientTest() {
         Client client = new Client(CLIENT_NAME);
         Assertions.assertEquals(client.getClientName(), CLIENT_NAME);
     }
 
     @Test
-    public void testToString() {
+    void testToString() {
         client.setClientId(CLIENT_ID);
         client.setClientName(CLIENT_NAME);
         String expectedResponseClient = "Client{"
